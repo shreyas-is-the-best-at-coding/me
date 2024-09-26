@@ -1,26 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang="en"> 
 
-    <head>
-        <style>
+<head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" 
+          content= "width=device-width, 
+                    initial-scale=1.0" />  
+    <style> 
+        body { 
+            background: rgb(39, 39, 39); 
+        } 
 
-p{
-    position: absolute;
-    top: 40%;
-    left: 40%;
+        h1 { 
+            position: absolute; 
+            top: 40%; 
+            left: 40%; 
 
-    font-size: 40px;
-    font-family: Arial,Helvetica, sans-serif;
-    background: linear-gradient(to right,red,yellow,blue);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-        </style>
-    </head>
+            font-size: 40px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            background: linear-gradient(to right, #f32170, 
+                    #ff6b08, #cf23cf, #eedd44); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
+        } 
+    </style> 
+    <script>
+        function submit(password) {
+            if (password=="123456789Shreyas S. Khare") {
+                
+            }
+        }
+    </script>
+</head> 
 
-    <body>
-        <h1>Hi, welcome to my website</h1>
-      <p>Made by Shreyas Khare</p>
-    </body>
+<body> 
+    <h1>Hello,Welcome to my website</h1> 
+    <label for="pswd">Password:</label>
+    <input type="text" name="pswd" id="pswd"></input>
+    <button onclick="submit(document.getElementById('pswd'))">Submit</button>
+</body> 
 
-</html>
+</html> 
